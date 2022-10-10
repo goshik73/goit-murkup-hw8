@@ -1,0 +1,56 @@
+.hero {
+    padding: 200px 0;
+    text-align: center;
+    background-color: $third-bgc;
+    &__title{
+        max-width: 696px;
+        margin: 0 auto 30px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color:$bgc;
+    }
+    &__btn{
+        display: inline-block;
+        padding: 10px 32px;
+        align-items: center;
+        text-align: center;
+        font-family: $font-family;
+        background-color: $accent-color;
+        color: $bgc;
+        cursor: pointer;
+        min-width: 200px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
+        transition: color $transition-animation,
+            background-color $transition-animation;
+    }
+}
+.hero__btn:hover,
+.hero__btn:focus,
+.hero-btn:active {
+    background: $btn-hover-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.overlay {
+    background-color:$overlay-color;
+    width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../image/studio/studio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
