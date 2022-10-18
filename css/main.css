@@ -349,7 +349,8 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-[class*=__logo] {
+.header__logo,
+.footer__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -358,10 +359,31 @@ textarea {
   color: #2196f3;
   text-decoration: none;
 }
+
 @media screen and (max-width: 767px) {
-  [class*=__logo] {
+  .header__logo {
     display: inline-block;
     margin: 0;
+    padding: 16px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__logo {
+    padding: 26px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .header__logo {
+    padding: 24px 0 25px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
@@ -948,22 +970,22 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.wedo {
+.activity {
   padding-bottom: 94px;
 }
 @media screen and (max-width: 1199px) {
-  .wedo {
+  .activity {
     display: none;
   }
 }
 
-.wedo__list {
+.activity__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.wedo__title {
+.activity__title {
   color: #212121;
   font-weight: 700;
   font-size: 36px;
@@ -973,19 +995,19 @@ textarea {
   margin-bottom: 50px;
 }
 
-.wedo__item {
+.activity__item {
   width: calc((100% - 60px) / 3);
 }
 
-.wedo__item:not(:last-child) {
+.activity__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.wedo__thumb {
+.activity__thumb {
   position: relative;
 }
 
-.wedo__box {
+.activity__box {
   position: absolute;
   margin: 0 auto;
   bottom: 0;
@@ -995,7 +1017,7 @@ textarea {
   color: #ffffff;
 }
 
-.wedo__label {
+.activity__label {
   padding-top: 27px;
   padding-bottom: 27px;
   font-weight: 700;
@@ -1291,6 +1313,11 @@ textarea {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+@media (max-width: 1199px) {
+  .footer__location {
+    margin-bottom: 8px;
+  }
+}
 
 @media (max-width: 767px) {
   .footer__element {
@@ -1326,11 +1353,21 @@ textarea {
   }
 }
 
-.footer__contact-item {
-  margin-bottom: 10px;
+@media (max-width: 1199px) {
+  .footer__contact-item {
+    margin-bottom: 8px;
+  }
+  .footer__contact-item:last-child {
+    margin-bottom: 0;
+  }
 }
-.footer__contact-item:last-child {
-  margin-bottom: 0;
+@media (min-width: 1200px) {
+  .footer__contact-item {
+    margin-bottom: 9px;
+  }
+  .footer__contact-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .footer__contact-link {
@@ -1347,7 +1384,9 @@ textarea {
 .footer__contact-link:hover,
 .footer__contact-link:focus,
 .contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:focus,
+.footer__location:focus,
+.footer__location:hover {
   color: #2196f3;
 }
 
@@ -1705,7 +1744,7 @@ textarea {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal__comment:focus {
+.modal__comment:focus, .modal__comment:hover {
   outline: none;
   border: 1px solid #2196f3;
 }
@@ -1719,7 +1758,7 @@ textarea {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.modal__form-input:focus {
+.modal__form-input:focus, .modal__form-input:hover {
   outline: none;
   border: 1px solid #2196f3;
 }
@@ -1732,7 +1771,8 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__form-input:focus + .modal__icon {
+.modal__form-input:focus + .modal__icon,
+.modal__form-input:hover + .modal__icon {
   fill: #2196f3;
 }
 
@@ -1999,15 +2039,16 @@ textarea {
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover .portfolio__overlay {
+.portfolio__item:hover .portfolio__overlay,
+.portfolio__item:focus .portfolio__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  color: $main-text-color;
-  background-color: $white-text-color;
+  color: $secondary-text-color;
+  background-color: $bgc;
   font-family: Roboto, sans-serif;
 
   font-size: 14px;
@@ -42,7 +42,7 @@ h6 {
 
 h2 {
   font-weight: 700;
-  color: $title-text-color;
+  color: $primery-text-color;
 }
 
 textarea {

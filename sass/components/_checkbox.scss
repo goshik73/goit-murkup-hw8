@@ -26,12 +26,12 @@
   height: 15px;
 
   border-radius: 2px;
-  border: 2px solid $title-text-color;
+  border: 2px solid $primery-text-color;
   flex-shrink: 0;
 }
 
 .check__input:checked + .check__icon {
-  background-color: $accent-text-color;
+  background-color: $accent-color;
   border-color: transparent;
   background-image: url(../images/cheeck.svg);
   background-size: contain;
@@ -54,7 +54,7 @@
 }
 
 .check__link {
-  color: $accent-text-color;
+  color: $accent-color;
   position: relative;
   text-decoration: underline;
 }

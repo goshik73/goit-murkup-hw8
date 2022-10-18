@@ -3,7 +3,7 @@
 }
 
 .portfolio {
-  background-color: $white-text-color;
+  background-color: $bgc;
 
   @media screen and (max-width: 1199px) {
     padding-top: 60px;
@@ -35,8 +35,8 @@
   display: inline-block;
   border: 0;
   font-family: inherit;
-  color: $title-text-color;
-  background-color: $third-bg-color;
+  color: $primery-text-color;
+  background-color: $secondary-bg-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -51,8 +51,8 @@
   &:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
-    background-color: $accent-text-color;
-    color: $white-text-color;
+    background-color: $accent-color;
+    color: $bgc;
   }
 }
 
@@ -117,11 +117,12 @@
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform $transition-animation;
 }
 
-.portfolio__item:hover .portfolio__overlay {
+.portfolio__item:hover .portfolio__overlay,
+.portfolio__item:focus .portfolio__overlay {
   transform: translateY(0);
 }
 
@@ -129,7 +130,7 @@
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  color: $white-text-color;
+  color: $bgc;
 }
 
 .portfolio__meta {
@@ -145,7 +146,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: $title-text-color;
+  color: $primery-text-color;
 }
 
 .portfolio__meta-text {

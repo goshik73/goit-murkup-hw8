@@ -1,5 +1,5 @@
 .team {
-  background-color: $third-bg-color;
+  background-color: $secondary-bg-color;
   @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -18,7 +18,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: $title-text-color;
+  color: $primery-text-color;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
@@ -40,7 +40,7 @@
 .team__item {
   padding-bottom: 24px;
 
-  background-color: $white-text-color;
+  background-color: $bgc;
   box-shadow: $main-box-shadow;
   border-radius: 0px 0px 4px 4px;
 
@@ -75,7 +75,7 @@
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: $title-text-color;
+  color: $primery-text-color;
 }
 
 .team__text {
@@ -118,8 +118,8 @@
 
   &:hover,
   &:focus {
-    background-color: $accent-text-color;
-    color: $white-text-color;
+    background-color: $accent-color;
+    color: $bgc;
   }
 }
 

@@ -17,7 +17,7 @@
 }
 
 .skills__title {
-  color: $title-text-color;
+  color: $primery-text-color;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -68,7 +68,7 @@
   padding-bottom: 25px;
 
   height: 120px;
-  background-color: $third-bg-color;
+  background-color: $secondary-bg-color;
   border-radius: 4px;
 
   align-items: center;
@@ -77,7 +77,7 @@
 }
 
 .skills__label {
-  color: $title-text-color;
+  color: $primery-text-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

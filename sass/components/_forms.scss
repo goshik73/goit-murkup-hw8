@@ -6,7 +6,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  color: $white-text-color;
+  color: $bgc;
   background-color: transparent;
 
   &::placeholder {
@@ -39,8 +39,8 @@
   align-items: center;
   justify-content: center;
 
-  color: $white-text-color;
-  background-color: $accent-text-color;
+  color: $bgc;
+  background-color: $accent-color;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -48,6 +48,6 @@
 }
 
 .footer_submit-icon {
-  fill: $white-text-color;
+  fill: $bgc;
   margin-left: 10px;
 }

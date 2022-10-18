@@ -17,7 +17,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: $title-text-color;
+  color: $primery-text-color;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
@@ -66,8 +66,8 @@
 
   &:hover,
   &:focus {
-    color: $accent-text-color;
-    border: 1px solid $accent-text-color;
+    color: $accent-color;
+    border: 1px solid $accent-color;
   }
 }
 

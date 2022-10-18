@@ -8,7 +8,7 @@
   min-height: 581px;
   width: 100%;
 
-  background: $white-text-color;
+  background: $bgc;
   box-shadow: $modal-window-shadow;
   border-radius: 4px;
   transition: transform $transition-animation;
@@ -65,7 +65,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: $title-text-color;
+  color: $primery-text-color;
   @media screen and (min-width: 1200px) {
     margin-bottom: 26px;
   }
@@ -105,9 +105,10 @@
     color: rgba(117, 117, 117, 0.5);
   }
 
-  &:focus {
+  &:focus,
+  &:hover {
     outline: none;
-    border: 1px solid $accent-text-color;
+    border: 1px solid $accent-color;
   }
 }
 
@@ -119,9 +120,10 @@
   transition: border $transition-animation;
   cursor: pointer;
 
-  &:focus {
+  &:focus,
+  &:hover {
     outline: none;
-    border: 1px solid $accent-text-color;
+    border: 1px solid $accent-color;
   }
 }
 
@@ -133,8 +135,9 @@
   transition: fill $transition-animation;
 }
 
-.modal__form-input:focus + .modal__icon {
-  fill: $accent-text-color;
+.modal__form-input:focus + .modal__icon,
+.modal__form-input:hover + .modal__icon {
+  fill: $accent-color;
 }
 
 .modal_btn {
@@ -151,8 +154,8 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  color: $white-text-color;
-  background-color: $accent-text-color;
+  color: $bgc;
+  background-color: $accent-color;
 
   border-radius: 4px;
   cursor: pointer;
@@ -161,7 +164,7 @@
 
   &:hover,
   &:focus {
-    background-color: $button-hover-color;
+    background-color: $btn-hover-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
@@ -179,7 +182,7 @@
   align-items: center;
   cursor: pointer;
 
-  background: $white-text-color;
+  background: $bgc;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -191,5 +194,5 @@
 
 .modal__close-btn:hover .modal__close-icon,
 .modal__close-btn:focus .modal__close-icon {
-  fill: $accent-text-color;
+  fill: $accent-color;
 }
