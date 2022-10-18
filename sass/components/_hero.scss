@@ -1,0 +1,101 @@
+.hero {
+  text-align: center;
+
+  padding: 118px 0;
+  width: 100%;
+
+  min-height: 400px;
+  margin: 0 auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herobg-480w.jpg);
+
+  background-color: $second-bg-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/herobg-768w.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/herobg-1600w.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media screen and (max-width: 767px) {
+    .hero {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/herobg-480w@2.jpg);
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .hero {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/herobg-768w@2.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .hero {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/herobg-1600w@2.jpg);
+    }
+  }
+}
+
+.hero__title {
+  margin: 0 auto 30px;
+  max-width: 360px;
+
+  font-weight: 900;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 26px;
+
+  color: $white-text-color;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    line-height: 1.36;
+    font-size: 44px;
+  }
+}
+
+.hero__button {
+  display: inline-block;
+  min-width: 200px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $white-text-color;
+  background-color: $accent-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: color $transition-animation, background-color $transition-animation;
+
+  &:hover,
+  &:focus {
+    background: $button-hover-color;
+  }
+}
