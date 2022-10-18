@@ -19,13 +19,14 @@
 
   @media screen and (max-width: 767px) {
     position: absolute;
-
+    width: 100vw;
     height: 100vh;
     padding: 48px 40px;
     top: 0;
     left: 0;
     opacity: 0;
     transform: translateX(-100%);
+    z-index: 1;
 
     &.is-open {
       position: absolute;
@@ -38,7 +39,6 @@
       top: 0;
       left: 0;
       opacity: 1;
-      z-index: 1;
 
       transform: translateX(0);
     }
@@ -119,6 +119,10 @@
 
   &.is-open .icon__close {
     display: block;
+  }
+  &.is-open .icon__close:hover,
+  &.is-open .icon__close:focus {
+    fill: $accent-color;
   }
 
   &.is-open .icon__menu {

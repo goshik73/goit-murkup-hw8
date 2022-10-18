@@ -445,6 +445,7 @@ textarea {
 @media screen and (max-width: 767px) {
   .nav__content {
     position: absolute;
+    width: 100vw;
     height: 100vh;
     padding: 48px 40px;
     top: 0;
@@ -452,6 +453,7 @@ textarea {
     opacity: 0;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
+    z-index: 1;
   }
   .nav__content.is-open {
     position: absolute;
@@ -468,7 +470,6 @@ textarea {
     top: 0;
     left: 0;
     opacity: 1;
-    z-index: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -571,6 +572,9 @@ textarea {
 }
 .nav__btn.is-open .icon__close {
   display: block;
+}
+.nav__btn.is-open .icon__close:hover, .nav__btn.is-open .icon__close:focus {
+  fill: #2196f3;
 }
 .nav__btn.is-open .icon__menu {
   display: none;
