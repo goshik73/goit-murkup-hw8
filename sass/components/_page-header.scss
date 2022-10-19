@@ -12,7 +12,9 @@
     justify-content: space-between;
   }
 }
-
+body .nav__content .is-open{
+  overflow: hidden;
+}
 .nav__content {
   background-color: $bgc;
   transition: transform $transition-animation, opacity $transition-animation;
