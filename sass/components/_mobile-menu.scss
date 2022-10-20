@@ -81,6 +81,11 @@
     display: none;
   }
 }
+.menu-container.is-open .menu-toggle:focus {
+  fill: $accent-color;
+  background-color: $bgc;
+}
+
 
 .menu-toggle:hover,
 .menu-toggle:focus {
