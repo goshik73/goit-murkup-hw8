@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid #ececec;
+  
 }
 .container {
   display: flex;
@@ -77,9 +77,6 @@
 .icon-close:focus {
   fill: $accent-color;
 }
-// .menu-toggle .is-close:focus{
-//   color: $accent-color;
-// }
 .menu-container {
   position: fixed;
   top: 0;

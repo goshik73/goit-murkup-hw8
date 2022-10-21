@@ -1,6 +1,7 @@
 .header {
   position: relative;
   color: $bgc;
+  border-bottom: 1px solid #ececec;
 }
 
 .header__container {
@@ -103,7 +104,6 @@
   color: $primery-text-color;
 }
 .site-nav__item {
-  // display: block;
   &:not(:last-child) {
     margin-bottom: 32px;
   }
