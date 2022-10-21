@@ -72,7 +72,7 @@
       margin-top: 60px;
     }
   }
-
+}
 .footer__contact-item {
   @media (max-width: 1199px) {
     margin-bottom: 8px;
@@ -190,10 +190,9 @@
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: $bgc;
 }
