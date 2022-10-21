@@ -70,6 +70,10 @@
     display: none;
   }
 }
+.menu-toggle:focus,
+.menu-toggle:hover {
+  fill: $accent-color;
+}
 .icon-close:focus {
   fill: $accent-color;
 }
