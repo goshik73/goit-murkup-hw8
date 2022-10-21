@@ -151,19 +151,12 @@
     background: $accent-color;
   }
 }
-// .contacts__item {
-//   font-weight: 500;
-//   font-size: 34px;
-//   line-height: 1.18;
-//   letter-spacing: 0.02em;
-//   color: $accent-color;
-//   @media (min-width: 768px) and (max-width: 1199px) {
-//     margin-top: 10px;
-//   }
-// }
-.contacts__link.mail {
+.contacts__link .mail {
+  @media (max-width: 479px) {
+    font-size: 20px;
+  }
   @media (min-width: 480px) and (max-width: 1199px) {
-    font-size: 24px;
+    font-size: 25px;
     line-height: 1.16;
     letter-spacing: 0.02em;
   }
@@ -181,7 +174,6 @@
   display: flex;
 
   @media (max-width: 479px) {
-    font-size: 25px;
   }
   font-size: 34px;
   line-height: 1.18;

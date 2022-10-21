@@ -620,12 +620,17 @@ textarea {
     background: #2196f3;
   }
 }
-.contacts__link.mail {
+.contacts__link .mail {
   color: rgb(117, 117, 117);
 }
+@media (max-width: 479px) {
+  .contacts__link .mail {
+    font-size: 20px;
+  }
+}
 @media (min-width: 480px) and (max-width: 1199px) {
-  .contacts__link.mail {
-    font-size: 24px;
+  .contacts__link .mail {
+    font-size: 25px;
     line-height: 1.16;
     letter-spacing: 0.02em;
   }
@@ -654,12 +659,6 @@ textarea {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media (max-width: 479px) {
-  .contacts__link {
-    font-size: 25px;
-  }
-}
-
 .icon-mail {
   margin-right: 10px;
   fill: currentColor;
