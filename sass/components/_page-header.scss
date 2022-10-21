@@ -152,6 +152,7 @@
   }
 }
 .contacts__link.mail {
+  color: $secondary-text-color;
   @media (max-width: 479px) {
     font-size: 20px;
     line-height: 1.14;
@@ -162,7 +163,6 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
   }
-  color: $secondary-text-color;
 }
 .tel {
   color: $accent-color;
