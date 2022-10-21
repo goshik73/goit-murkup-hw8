@@ -628,22 +628,32 @@ textarea {
 }
 
 .tel {
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  .tel {
+    font-size: 25px;
+  }
 }
 
 .contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 479px) {
+  .contacts__link {
+    font-size: 25px;
+  }
 }
 
 .icon-mail {
@@ -2138,14 +2148,8 @@ textarea {
     display: none;
   }
 }
-.menu-container.is-open .menu-toggle:focus {
+.icon-close:focus {
   fill: #2196f3;
-  background-color: #ffffff;
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu-container {
@@ -2174,19 +2178,19 @@ textarea {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
+  margin-bottom: 100px;
   list-style: none;
 }
 
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
