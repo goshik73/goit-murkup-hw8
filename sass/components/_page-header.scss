@@ -61,6 +61,8 @@
 }
 .header__contact-link {
   color: $secondary-text-color;
+  display: flex;
+  align-items: center;
 }
 .header__contact-link:hover,
 .header__contact-link:focus {
