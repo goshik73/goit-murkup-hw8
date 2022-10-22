@@ -1,5 +1,4 @@
 .header {
-  
 }
 .container {
   display: flex;
@@ -79,10 +78,13 @@
 }
 .menu-container {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 48px 40px;
   background-color: $bgc;
   z-index: 999;
@@ -104,7 +106,6 @@
 
 .mobile-menu {
   padding: 0;
-  margin-bottom: 100px;
   list-style: none;
 }
 
